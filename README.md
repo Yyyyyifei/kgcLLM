@@ -1,4 +1,4 @@
-Model for utilizing Llama3-8B-Instruct for knowledge graph completion
+**Model for utilizing Llama3-8B-Instruct for knowledge graph completion**
 
 Optimization Pending:
 1. Top-k Filtering
