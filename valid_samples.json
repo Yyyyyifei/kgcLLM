@@ -1,0 +1,162 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: American Pie\n Relation: /film/film/genre \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Romance Film\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Prostate cancer\n\tGreater London\n\tLars Hirschfeld\n\tDouglas County\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Romance Film\n Relation: /film/film/genre \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "American Pie\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Bill Condon\n\tMandopop\n\tNick Lachey\n\tThe Fifth Element\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: St. Louis\n Relation: /location/location/time_zones \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Central Time Zone\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Indigenous Australians\n\tThomas Mitchell\n\tUnfaithful\n\tKim Basinger\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Central Time Zone\n Relation: /location/location/time_zones \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "St. Louis\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Chiang Kai-shek\n\tArnold Schoenberg\n\tRobbie Williams\n\tAuburn\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: George Burns\n Relation: /people/person/spouse_s./people/marriage/type_of_union \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Marriage\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Nottingham\n\tPsychedelic trance\n\tGangsta rap\n\tGeorge Harrison: Living in the Material World\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Marriage\n Relation: /people/person/spouse_s./people/marriage/type_of_union \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "George Burns\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Bill Murray\n\tCajun music\n\tDavid Gilmour\n\tKristin Chenoweth\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Primetime Emmy Award for Outstanding Writing - Drama Series\n Relation: /award/award_category/winners./award/award_honor/award_winner \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "David Chase\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Nottingham Forest F.C.\n\tMichael Lantieri\n\tThe Police\n\tMonmouth County\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: David Chase\n Relation: /award/award_category/winners./award/award_honor/award_winner \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Primetime Emmy Award for Outstanding Writing - Drama Series\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Fisher Stevens\n\tModern rock\n\tOttoman wars in Europe\n\tHong Kong Film Award for Best Actress\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Silent Hill\n Relation: /film/film/release_date_s./film/film_regional_release_date/film_release_region \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Lithuania\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Montreal Alouettes\n\tSV Waldhof Mannheim\n\tDennis Quaid\n\tBetty Grable\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Lithuania\n Relation: /film/film/release_date_s./film/film_regional_release_date/film_release_region \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Silent Hill\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Homelessness\n\tDalian Shide F.C.\n\tWag the Dog\n\tMcLean\n"
+    }
+  }
+]

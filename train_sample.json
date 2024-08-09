@@ -1,0 +1,162 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Dominican Republic\n Relation: /location/country/form_of_government \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Republic\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Bochum\n\tSurrey\n\tRotherham United F.C.\n\tIndian Rebellion of 1857\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Republic\n Relation: /location/country/form_of_government \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Dominican Republic\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Rita Wilson\n\tPark Chu-Young\n\tJennifer Celotta\n\tThe City of Lost Children\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Mighty Morphin Power Rangers\n Relation: /tv/tv_program/regular_cast./tv/regular_tv_appearance/actor \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Wendee Lee\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "AC Omonia\n\tElektra Records\n\tKitsap County\n\tJay Roach\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Wendee Lee\n Relation: /tv/tv_program/regular_cast./tv/regular_tv_appearance/actor \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Mighty Morphin Power Rangers\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Announcer\n\t1992 Winter Olympics\n\tHarry Andrews\n\tSouthern California\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Drama\n Relation: /media_common/netflix_genre/titles \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "American History X\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Shine\n\tJulie Benz\n\tUniversity of Southern California\n\tCooking Vinyl\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: American History X\n Relation: /media_common/netflix_genre/titles \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Drama\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Steve Jobs\n\tMongol Empire\n\tSwimming\n\tMetro Detroit\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Michelle Rodriguez\n Relation: /award/award_winner/awards_won./award/award_honor/award_winner \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Naveen Andrews\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Husbands and Wives\n\tFiddle\n\tEurasia\n\tHammond\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Naveen Andrews\n Relation: /award/award_winner/awards_won./award/award_honor/award_winner \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Michelle Rodriguez\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "97th United States Congress\n\tJoan Collins\n\tGary Barber\n\tB.B. King\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the tail entity based on the provided head entity and relation. \n Head entity: Australia national association football team\n Relation: /soccer/football_team/current_roster./sports/sports_team_roster/position \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Midfielder\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Reese Witherspoon\n\tVVV-Venlo\n\tSword and sorcery\n\tGuitar Hero II\n"
+    }
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Predict the head entity based on the provided tail entity and relation. \n Tail entity: Midfielder\n Relation: /soccer/football_team/current_roster./sports/sports_team_roster/position \n"
+      }
+    ],
+    "chosen": {
+      "from": "gpt",
+      "value": "Australia national association football team\n"
+    },
+    "rejected": {
+      "from": "gpt",
+      "value": "Radiohead\n\tAn American in Paris\n\tBass guitar\n\tDeWitt Clinton High School\n"
+    }
+  }
+]
