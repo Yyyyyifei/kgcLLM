@@ -239,19 +239,7 @@ def inference(data_known, data_test, id2ent, model, tokenizer, ent2text, id2rel,
             logits = model(**inputs, past_key_values=tail_kv_cache).logits
             
             logprobs = torch.nn.functional.log_softmax(logits, dim=-1)
-            
-            # make this faster by batch operations
-            # for i in range(len(logprobs)):
-            #     candidate_logprob = logprobs[i][:answer_lengths[i]].gather(dim=-1, index=inputs["input_ids"][i, 1:answer_lengths[i]+1].unsqueeze(-1)).mean().item()
-            #     # batch_probs.append(candidate_logprob)
-            #     if candidates[i] in answers:
-            #         saves.append([candidates[i], candidate_logprob, 1])
-            #     else:
-            #         saves.append([candidates[i], candidate_logprob, 0])
-            #     if candidates[i] == answers[0]:
-            #         pass
-            # #         # TODO: why different from first_answer_logprob?
-            # #         assert candidate_logprob == first_answer_logprob            
+                 
             mask = torch.cat((inputs["attention_mask"][:, prompt_lengths[0]:], torch.zeros(bs, 1).to(model.device)), dim=1).unsqueeze(-1)
             logprobs.masked_fill_(~mask.to(torch.bool), 0)
             gathering_index = inputs["input_ids"][:, 1:].unsqueeze(-1)
@@ -265,11 +253,7 @@ def inference(data_known, data_test, id2ent, model, tokenizer, ent2text, id2rel,
         ranks = torch.sort(rankings[answer_index])[0] + 1 - torch.arange(answer_index.size(0))
         
         logging.info(ranks)
-        
-        # ranks = get_ranks(saves)
-        # logging.info(ranks)
-    
-    
+            
     data_test_head = data_test.groupby(["tail_id", "relation_id"]).agg({"head_id": list}).reset_index().values.tolist()
     print("N_data_test_head", len(data_test_head))
     
@@ -344,10 +328,8 @@ def parse_args():
     parser.add_argument("--seed", default=42, type=int)
     parser.add_argument("--batch_size", default=512, type=int)
     parser.add_argument("--num_workers", default=8, type=int)
-    # parser.add_argument("--model_root", default="/datadrive/josephtang/LLaMA-Factory/models/llama3_lora_FB15k-237", type=str)
-    # parser.add_argument("--model_root", default="/datadrive/josephtang/kg-llm/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/e1945c40cd546c78e41f1151f4db032b271faeaa", type=str)
     parser.add_argument("--data_root", default="./data/kgc_data/FB15k-237", type=str)
-    parser.add_argument("--model_root", default="/scratch/ssd004/scratch/zjt/LLaMA-Factory/models/FB15k-237-4N", type=str)
+    parser.add_argument("--model_root", default="meta-llama/Meta-Llama-3-8B-Instruct", type=str)
 
     return parser.parse_args()
 
